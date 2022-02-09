@@ -1,14 +1,29 @@
 <template>
   <div>
+    
+    <Header/>
 
-    <h1>HOME VUE</h1>
+    <Posts/>
+
+    <Footer/>
 
   </div>
 </template>
 
 <script>
+
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Posts from './components/Posts'
+
 export default {
-  name: "App"
+  name: "App",
+  components: {
+     Header,
+     Footer,
+     Posts
+  } 
+
 }
 </script>
 
